@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa - Praktikum Cloud</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6fa;
+      color: #243047;
+    }
+    .hero {
+      background: linear-gradient(135deg, #183b70, #2877b9);
+      color: white;
+      text-align: center;
+      padding: 64px 20px;
+    }
+    .hero .label {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 20px;
+      font-size: 13px;
+      letter-spacing: .4px;
+    }
+    h1 { margin: 18px 0 8px; font-size: 36px; }
+    .hero p { margin: 0; color: #e7efff; }
+    main { width: min(900px, 92%); margin: 30px auto; }
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 18px 0;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px rgba(22, 48, 82, .08);
+    }
+    h2 { color: #1d548e; margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 14px;
+    }
+    .item {
+      background: #edf4fc;
+      border-radius: 10px;
+      padding: 15px;
+    }
+    .item strong { display: block; margin-bottom: 5px; color: #173b70; }
+    footer { text-align: center; color: #68758a; padding: 24px 12px 35px; }
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      .hero { padding: 48px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <span class="label">PRAKTIKUM MODUL 1</span>
+    <h1>Website Profil Mahasiswa</h1>
+    <p>Contoh penerapan website statis pada layanan cloud</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Tentang Website</h2>
+      <p>
+        Website ini dibuat untuk memenuhi tugas praktikum Web Server on Cloud.
+        Halaman dibuat menggunakan HTML dan CSS, kemudian source code disimpan
+        pada GitHub dan dipublikasikan menggunakan Vercel.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Informasi Praktikum</h2>
+      <div class="grid">
+        <div class="item">
+          <strong>Mata Kuliah</strong>
+          Komputasi Awan
+        </div>
+        <div class="item">
+          <strong>Materi</strong>
+          Web Server on Cloud
+        </div>
+        <div class="item">
+          <strong>Teknologi</strong>
+          HTML, CSS, GitHub, Vercel
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Tujuan Deployment</h2>
+      <p>
+        Deployment bertujuan agar website dapat diakses melalui internet tanpa
+        harus dijalankan langsung dari komputer pembuatnya. Integrasi GitHub
+        dengan Vercel juga membantu proses pembaruan website secara otomatis
+        ketika terdapat perubahan pada source code.
+      </p>
+    </section>
+  </main>
+
+  <footer>Praktikum Komputasi Awan | Web Server on Cloud</footer>
+</body>
+</html>
